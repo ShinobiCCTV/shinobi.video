@@ -1,6 +1,6 @@
 [
     {
-        "description":"Install OpenCV <b>without</b> CUDA <small>(Ubuntu - Easy)</small>",
+        "description":"Install OpenCV and OpenALPR <b>without</b> CUDA <small>(Ubuntu - Easy)</small>",
         "blocks":[
             {
                 "text":"OpenCV is the base engine used for detection. You will find most object detection software uses OpenCV or something based on it."
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "description":"Install OpenCV <b>with</b> CUDA <small>(Ubuntu - Boring)</small>",
+        "description":"Install OpenCV <b>with</b> CUDA <small>(Ubuntu - Easy)</small>",
         "blocks":[
             {
                 "text":"<b>WARNING : </b> Only do this if you have a Nvidia graphics chip."
@@ -24,55 +24,55 @@
             {
                 "orderList":[
                     {
-                        "text":"Disable noveau, Create a file to do this.",
-                        "code":"sudo nano /etc/modprobe.d/blacklist-nouveau.conf"
+                        "text":"First you need to install the NVIDIA CUDA drivers. If you are on Ubuntu server don't be alarmed when the desktop environment appears. This is a side effect of installing NVIDIA drivers apparently.",
+                        "code":"sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub<br>sudo echo \"deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /\" | sudo tee -a /etc/apt/sources.list<br>sudo apt update<br>sudo apt -y install cuda-drivers"
                     },
                     {
-                        "text":"Place these lines in the blank file.",
-                        "code":"blacklist nouveau<br>options nouveau modeset=0"
+                        "text":"Reboot.",
+                        "code":"sudo reboot"
                     },
                     {
-                        "text":"Update the system image. Reboot.",
-                        "code":"sudo update-initramfs -u<br>sudo reboot"
+                        "text":"Install CUDA Toolkit 9.1",
+                        "code":"sudo apt-get -y install cuda-toolkit-9-1"
                     },
                     {
-                        "text":"Download CUDA 8.0.",
-                        "code":"wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda_8.0.44_linux-run"
+                        "text":"Check the driver status with NVIDIA's utility.",
+                        "code":"nvidia-smi"
                     },
                     {
-                        "text":"You must stop your GPU to install CUDA.",
-                        "code":"sudo service lightdm stop<br>sudo chmod +x cuda_8.0.44_linux-run<br>sudo ./cuda_8.0.44_linux-run"
+                        "text":"nvidia-smi should show you something like this.",
+                        "code":"+-----------------------------------------------------------------------------+<br>| NVIDIA-SMI 390.25                 Driver Version: 390.25                    |<br>|-------------------------------+----------------------+----------------------+<br>| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |<br>|===============================+======================+======================|<br>|   0  GeForce GTX 1050    Off  | 00000000:01:00.0 Off |                  N/A |<br>| 30%   30C    P0    N/A /  75W |      0MiB /  1999MiB |      0%      Default |<br>+-------------------------------+----------------------+----------------------+<br>                                                                               <br>+-----------------------------------------------------------------------------+<br>| Processes:                                                       GPU Memory |<br>|  GPU       PID   Type   Process name                             Usage      |<br>|=============================================================================|<br>|  No running processes found                                                 |<br>+-----------------------------------------------------------------------------+"
                     },
                     {
-                        "text":"Download and Install CuDNN from <a href=\"https://developer.nvidia.com/cudnn\">Nvidia's Website</a>.",
-                        "code":"<i>Install Example : dpkg -i ./libcudnn6_6.0.21-1+cuda8.0_amd64.deb</i>"
+                        "text":"Download, Build and Install OpenCV with CUDA enabled.",
+                        "code":"bash <(curl -s https://raw.githubusercontent.com/ShinobiCCTV/Shinobi/dev/INSTALL/opencv-cuda.sh)"
                     },
                     {
-                        "text":"Install libraries",
-                        "code":"sudo apt-get update && sudo apt-get install git libopencv-dev build-essential checkinstall cmake pkg-config yasm libtiff5-dev libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils libjpeg-dev libpango1.0-dev libgif-dev g++ openalpr openalpr-daemon openalpr-utils libopenalpr-dev"
-                    },
-                    {
-                        "text":"Download the source for OpenCV",
-                        "code":"git clone https://github.com/opencv/opencv.git -b 2.4 opencv"
-                    },
-                    {
-                        "text":"Build the Installer for OpenCV from the source files",
-                        "code":"cd opencv<br>mkdir release<br>cd release<br>cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_NVCUVID=ON -D BUILD_DOCS=ON -D WITH_XINE=ON -D WITH_CUDA=ON -D WITH_OPENGL=ON -D WITH_TBB=ON -D WITH_OPENNI=ON -D BUILD_EXAMPLES=ON -D WITH_OPENCL=ON -D CMAKE_BUILD_TYPE=RELEASE -D OPENCV_EXTRA_MODULES_PATH=../modules/opencv_contrib-master/modules/ -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D WITH_CUBLAS=1 .."
-                    },
-                    {
-                        "text":"When the installer is made you should see something like this somewhere just before the end.",
-                        "code":"--   NVIDIA CUDA<br>--     Use CUFFT:                   YES<br>--     Use CUBLAS:                  YES<br>--     USE NVCUVID:                YES<br>--     NVIDIA GPU arch:             20 21 30 35<br>--     NVIDIA PTX archs:            30<br>--     Use fast math:               YES<br>--     Tiny gpu module:             NO"
-                    },
-                    {
-                        "text":"Install OpenCV. This is the boring part.",
-                        "code":"make<br>make install"
+                        "text":"<b>Driver not starting?</b> You may need to reboot. If not then you may need to install version 340 instead.",
+                        "code":"apt remove nvidia* -y<br>apt install nvidia-340 -y"
                     }
                 ]
             }
         ]
     },
     {
-        "description":"Install the Shinobi Plugin",
+        "description":"Install <b>OpenALPR</b> with CUDA <small>(Ubuntu - Easy)</small>",
+        "blocks":[
+            {
+                "text":"<b>WARNING : </b> Be sure you have OpenCV built and installed with CUDA."
+            },
+            {
+                "orderList":[
+                    {
+                        "text":"Download, Build and Install OpenALPR with CUDA enabled.",
+                        "code":"bash <(curl -s https://raw.githubusercontent.com/ShinobiCCTV/Shinobi/dev/INSTALL/openalpr-gpu-easy.sh)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "description":"Install the OpenCV Shinobi Plugin",
         "blocks":[
             {
                 "orderList":[
@@ -86,7 +86,7 @@
                     },
                     {
                         "text":"Navigate to your Shinobi directory and install the node.js wrappers needed to run the plugin.",
-                        "code":"sudo npm install opencv canvas@1.6 moment"
+                        "code":"sudo npm install opencv canvas@1.6 moment --unsafe-perm"
                     },
                     {
                         "text":"Setup the configuration file for the plugin.",

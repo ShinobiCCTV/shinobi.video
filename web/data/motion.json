@@ -79,12 +79,49 @@
         ]
     },
     {
-        "description":"Once Installed",
+        "description":"Once Installed and Running",
         "blocks":[
             {
-                "text":"Important information to note are as follows."
+                "text":"Setting the Indifference value is the key value to making your Motion Detector run correctly. The Indifference value varies based on the camera data being processed.",
+                "list":[
+                    {
+                        "text":"Indoor or Outdoor"
+                    },
+                    {
+                        "text":"Lighting Conditions"
+                    },
+                    {
+                        "text":"Frame Size"
+                    },
+                    {
+                        "text":"Noise Level of the Environment"
+                    },
+                    {
+                        "text":"Noise Level of the Picture Quality"
+                    },
+                    {
+                        "text":"Choice of Motion Detector : Plugin, Built-In, or Third Party"
+                    }
+                ]
             },
             {
+                "text":"<b>Kevin Godell's (Built-In) Motion Detector :</b>The indifference value is the percentage of change in a region. A full frame detection is considered a detection on a region that covers the entire frame. The Indifference value is still represented in the red bar below.",
+                "list":[
+                    {
+                        "text":"<b>Example of Use : </b> Imagine you created a region 4 times pixel density of your left hand. Set the indifference to 25 (the pixel density of your left hand). Then wave both your hands in view and you should see a motion meter rating of atleast 50."
+                    }
+                ]
+            },
+            {
+                "text":"<b>Moe's (shinobi-motion.js) Motion Detector <code>Deprecated</code> :</b> This method was made by @soundstep originally for the browser. It seems to get a mushed number from the RGB values in the image. This is what I call Indifference and where I got the idea to name it that. The value will go up and down drastically to the point where I don't really know what the threshold actually is.",
+                "list":[
+                    {
+                        "text":"<b>Example of Use : </b> At my old home I lived at a busy street. I would have cars and people going by the camera all day. The motion meter (red bar under my monitor stream) was hovering around 40 to 50 from the shadows and grain of the 640x480 stream. When people would actually come up to my door it would shoot up to 70+. My choice was to set to 60 and it worked great... for that one camera."
+                    }
+                ]
+            },
+            {
+                "text":"Here are some important fields and elements to be aware of in the Shinobi panel.",
                 "list":[
                     {
                         "text":"<code>UI Element > Motion Meter : </code> When motion occurs a red bar will appear under your stream to indicate how much motion has happened."

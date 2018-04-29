@@ -47,6 +47,7 @@
                     <% 
         Object.keys(products).forEach(function(n,v){
             v=products[n]
+            if(v.enabled === 0)return;
             v.stripe.description=v.shortDescription
             v.stripe.currency=v.currency
             v.stripe.amount=v.amount*100

@@ -1,0 +1,73 @@
+[
+    {
+        "description":"How to Install CUDA drivers",
+        "blocks":[
+            {
+                "orderList":[
+                    {
+                        "text":"Add the NVIDIA driver repo to your sources list. If you are on Ubuntu server don't be alarmed when the desktop environment appears. This is a side effect of installing NVIDIA drivers apparently.",
+                        "code":"sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub<br>sudo echo \"deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64 /\" | sudo tee -a /etc/apt/sources.list<br>sudo apt update<br>sudo apt -y install cuda-drivers"
+                    },
+                    {
+                        "text":"Reboot.",
+                        "code":"sudo reboot"
+                    },
+                    {
+                        "text":"Install CUDA Toolkit 9.1",
+                        "code":"sudo apt-get -y install cuda-toolkit-9-1"
+                    },
+                    {
+                        "text":"Check the driver status with NVIDIA's utility.",
+                        "code":"nvidia-smi"
+                    },
+                    {
+                        "text":"nvidia-smi should show you something like this.",
+                        "code":"+-----------------------------------------------------------------------------+<br>| NVIDIA-SMI 390.25                 Driver Version: 390.25                    |<br>|-------------------------------+----------------------+----------------------+<br>| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |<br>|===============================+======================+======================|<br>|   0  GeForce GTX 1050    Off  | 00000000:01:00.0 Off |                  N/A |<br>| 30%   30C    P0    N/A /  75W |      0MiB /  1999MiB |      0%      Default |<br>+-------------------------------+----------------------+----------------------+<br>                                                                               <br>+-----------------------------------------------------------------------------+<br>| Processes:                                                       GPU Memory |<br>|  GPU       PID   Type   Process name                             Usage      |<br>|=============================================================================|<br>|  No running processes found                                                 |<br>+-----------------------------------------------------------------------------+"
+                    },
+                    {
+                        "text":"<b>Driver not starting?</b> You may need to reboot. If not then you may need to install version 340 instead.",
+                        "code":"apt remove nvidia* -y<br>apt install nvidia-340 -y"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "description":"How to Decode an RTSP Stream with NVIDIA Graphics Cards",
+        "blocks":[
+            {
+                "text":"This was tested on Geforce 9800 GT (Driver Version 340), Geforce GT 710 (Driver Version 390), Geforce GT 1030, and Geforce GTX 1050."
+            },
+            {
+                "orderList":[
+                    {
+                        "text":"Open the Monitor Settings or click the plus icon to create a new one."
+                    },
+                    {
+                        "text":"Find the <b>Input</b> section and set <b>Accelerator</b> to <b>Yes</b>."
+                    },
+                    {
+                        "text":"Set <b>Acceleration Engine</b> to <b>cuvid</b>"
+                    },
+                    {
+                        "text":"Set <b>Video Decoder</b> to <b>H.264 CUVID</b>"
+                    },
+                    {
+                        "text":"Disable <b>JPEG API</b>. Currently the NVIDIA decoder doesn't output JPEG data from an H.264 source. You must disable it or the camera process will crash."
+                    },
+                    {
+                        "text":"Save and enjoy!"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "description":"Object Detection with OpenCV and OpenALPR",
+        "blocks":[
+            {
+                "text":"You can read about Object Detection setup <a href='object'>here</a>."
+            }
+        ]
+    }
+]

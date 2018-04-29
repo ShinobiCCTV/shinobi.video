@@ -1,7 +1,7 @@
 {
     "4MB6P":{
         "id":"4MB6P",
-        "enabled":1,
+        "enabled":0,
         "created":"2017/07/09 22:39",
         "name":"H.O. SAFE 4MP HD IP Camera",
         "description":"Metal Body, Bullet Style",
@@ -68,7 +68,7 @@
     },
     "4MB6Px5":{
         "id":"4MB6Px5",
-        "enabled":1,
+        "enabled":0,
         "created":"2017/07/09 22:39",
         "name":"5 x H.O. SAFE 4MP HD IP Camera",
         "description":"Metal Body, Bullet Style",
@@ -135,7 +135,7 @@
     },
     "1MD1B":{
         "id":"1MD1B",
-        "enabled":1,
+        "enabled":0,
         "created":"2017/07/10 11:49",
         "name":"H.O. SAFE 1MP HD IP Camera",
         "description":"Metal Body, Dome Style",
@@ -200,7 +200,7 @@
     },
     "1MD1Bx5":{
         "id":"1MD1Bx5",
-        "enabled":1,
+        "enabled":0,
         "created":"2017/07/10 11:49",
         "name":"5 x H.O. SAFE 1MP HD IP Camera",
         "description":"Metal Body, Dome Style",
@@ -433,6 +433,220 @@
                 "label":"Data Sheet",
                 "href":"https://s3.amazonaws.com/cloudcamio/manuals/SmartRG_SR552n.pdf"
             }
+        ]
+    },
+    "RLC420":{
+        "id":"RLC420",
+        "enabled":1,
+        "created":"2018/03/25 12:32",
+        "name":"Reolink RLC-420 4MP PoE Dome Security Camera",
+        "description":"<p>24pcs infrared LEDs and advanced IR technology make Reolink RLC-420 an excellent night vision security camera, letting you see any event clearly even in the dark.</p><p>With a long night vision distance up to 100 feet, you can accurately identify people present in the event through videos captured by RLC-420 video surveillance camera.</p>",
+        "shortDescription":"ONVIF Compliant",
+        "dimensions":"6x4x6",
+        "dimensionsUnit":"in",
+        "weight":"2",
+        "weightUnit":"lb",
+        "currency":"usd",
+        "amount":100,
+        "shipping":"Free Shipping",
+        "shippingTime":"1 Week",
+        "tags":[
+            "Dome",
+            "Metal Body",
+            "Metal Housing",
+            "RTSP",
+            "ONVIF"
+        ],
+        "images":[
+            "/libs/assets/products/RLC-420/1.png"
+        ],
+        "background":"/libs/assets/products/RLC-420/420-m.jpg",
+        "stripe":{
+            "name":"Reolink RLC-420 4MP IP Camera",
+            "billingAddress":true
+        },
+        "specifications":{
+            "Warranty":"30 Days",
+            "Model":"RLC-420",
+            "Brand":"Reolink",
+            "Pixel Count":"4 Megapixel",
+            "Resolution":"1440p (2560 x 1440)",
+            "ONVIF":1,
+            "RTSP / H.264":1,
+            "Weatherproof":1,
+            "Colors":"White"
+        },
+        "packageIncludes":[
+            "RLC-420 IP Camera",
+            "Waterproof Lid",
+            "1m Network Cable",
+            "Quick Start Guide",
+            "Surveillance Sign",
+            "Mounting Hole Template",
+            "What's Next Brochure",
+            "Installation Guide",
+            "Pack of Screws"
+        ],
+        "categories":[
+            "IP Camera",
+            "ONVIF"
+        ]
+    },
+    "RLC422":{
+        "id":"RLC422",
+        "enabled":1,
+        "created":"2018/03/25 12:32",
+        "name":"Reolink RLC-422 5MP PoE Dome Security Camera",
+        "description":"<p>5MP RLC-422 with a pixel resolution of 3072x1728, that is, 2.5X the resolution of 1080p Full HD, and even 1.4X the resolution of 1440p Super HD. You will definitely have the best chance to see every image detail as you wish.</p><p>RLC-422 dome IP camera outdoor features auto focus lens, along with the viewing angle varying from 33°~98°. With 4X optical zoom, you can zoom in to see more details of far-away objects without getting closer, or zoom out to get a wider and larger view. The 4X optical zoom security camera never compromises in image and video quality</p>",
+        "shortDescription":"ONVIF, 4X Optical Zoom",
+        "dimensions":"6x4x6",
+        "dimensionsUnit":"in",
+        "weight":"2",
+        "weightUnit":"lb",
+        "currency":"usd",
+        "amount":140,
+        "shipping":"Free Shipping",
+        "shippingTime":"1 Week",
+        "tags":[
+            "Dome",
+            "Metal Body",
+            "Metal Housing",
+            "RTSP",
+            "ONVIF"
+        ],
+        "images":[
+            "/libs/assets/products/RLC-422/1.png"
+        ],
+        "background":"/libs/assets/products/RLC-422/422-m.jpg",
+        "stripe":{
+            "name":"Reolink RLC-422 5MP IP Camera",
+            "billingAddress":true
+        },
+        "specifications":{
+            "Warranty":"30 Days",
+            "Model":"RLC-422",
+            "Brand":"Reolink",
+            "Pixel Count":"5 Megapixel",
+            "Resolution":"1728p (3072 x 1728)",
+            "ONVIF":1,
+            "RTSP / H.264":1,
+            "Weatherproof":1,
+            "Colors":"White"
+        },
+        "packageIncludes":[
+            "RLC-422 IP Camera",
+            "Waterproof Lid",
+            "1m Network Cable",
+            "Quick Start Guide",
+            "Surveillance Sign",
+            "Mounting Hole Template",
+            "What's Next Brochure",
+            "Installation Guide",
+            "Pack of Screws"
+        ],
+        "categories":[
+            "IP Camera",
+            "ONVIF",
+            "Optical Zoom"
+        ]
+    },
+    "RLC422x20":{
+        "id":"RLC422x20",
+        "enabled":1,
+        "created":"2018/03/25 12:32",
+        "name":"20 x Reolink RLC-422 5MP PoE Dome Security Camera",
+        "description":"<p>5MP RLC-422 with a pixel resolution of 3072x1728, that is, 2.5X the resolution of 1080p Full HD, and even 1.4X the resolution of 1440p Super HD. You will definitely have the best chance to see every image detail as you wish.</p><p>RLC-422 dome IP camera outdoor features auto focus lens, along with the viewing angle varying from 33°~98°. With 4X optical zoom, you can zoom in to see more details of far-away objects without getting closer, or zoom out to get a wider and larger view. The 4X optical zoom security camera never compromises in image and video quality</p>",
+        "shortDescription":"ONVIF, 4X Optical Zoom",
+        "dimensions":"25x25x25",
+        "dimensionsUnit":"in",
+        "weight":"40",
+        "weightUnit":"lb",
+        "currency":"usd",
+        "amount":2500,
+        "shipping":"Free Shipping",
+        "shippingTime":"1 Week",
+        "tags":[
+            "Dome",
+            "Metal Body",
+            "Metal Housing",
+            "RTSP",
+            "ONVIF"
+        ],
+        "images":[
+            "/libs/assets/products/RLC-422/1.png"
+        ],
+        "background":"/libs/assets/products/RLC-422/422-m.jpg",
+        "stripe":{
+            "name":"20 x Reolink RLC-422 5MP IP Camera",
+            "billingAddress":true
+        },
+        "specifications":{
+            "Warranty":"30 Days",
+            "Model":"RLC-422",
+            "Brand":"Reolink",
+            "Pixel Count":"5 Megapixel",
+            "Resolution":"1728p (3072 x 1728)",
+            "ONVIF":1,
+            "RTSP / H.264":1,
+            "Weatherproof":1,
+            "Colors":"White"
+        },
+        "packageIncludes":[
+            "20 x RLC-422 Camera and Original Package Contents"
+        ],
+        "categories":[
+            "IP Camera",
+            "ONVIF",
+            "Optical Zoom"
+        ]
+    },
+    "RLC420x35":{
+        "id":"RLC420x35",
+        "enabled":1,
+        "created":"2018/03/25 12:32",
+        "name":"35 x Reolink RLC-420 4MP IP Camera",
+        "description":"<p>24pcs infrared LEDs and advanced IR technology make Reolink RLC-420 an excellent night vision security camera, letting you see any event clearly even in the dark.</p><p>With a long night vision distance up to 100 feet, you can accurately identify people present in the event through videos captured by RLC-420 video surveillance camera.</p>",
+        "shortDescription":"ONVIF Compliant",
+        "dimensions":"25x25x25",
+        "dimensionsUnit":"in",
+        "weight":"52.5",
+        "weightUnit":"lb",
+        "currency":"usd",
+        "amount":3150,
+        "shipping":"Free Shipping",
+        "shippingTime":"1 Week",
+        "tags":[
+            "Dome",
+            "Metal Body",
+            "Metal Housing",
+            "RTSP",
+            "ONVIF"
+        ],
+        "images":[
+            "/libs/assets/products/RLC-420/1.png"
+        ],
+        "background":"/libs/assets/products/RLC-420/420-m.jpg",
+        "stripe":{
+            "name":"35 x Reolink RLC-420 4MP IP Camera",
+            "billingAddress":true
+        },
+        "specifications":{
+            "Warranty":"30 Days",
+            "Model":"RLC-420",
+            "Brand":"Reolink",
+            "Pixel Count":"4 Megapixel",
+            "Resolution":"1440p (2560 x 1440)",
+            "ONVIF":1,
+            "RTSP / H.264":1,
+            "Weatherproof":1,
+            "Colors":"White"
+        },
+        "packageIncludes":[
+            "35 x RLC-420 Camera and Original Package Contents"
+        ],
+        "categories":[
+            "IP Camera",
+            "ONVIF"
         ]
     }
 }

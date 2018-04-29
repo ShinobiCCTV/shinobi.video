@@ -76,7 +76,7 @@
                             "text":"Login to the Terminal.",
                             "list":[
                                 {
-                                    "code":"Terminal Username : shinobicctv<br>Terminal Password : shinobicctv"
+                                    "code":"Terminal Username : root<br>Terminal Password : shinobi"
                                 }
                             ]
                         },
@@ -92,7 +92,7 @@
                             "text":"Open the IP address associated with this machine in your web browser on port 8080. <i>Example : http://192.168.1.100:8080</i>",
                             "list":[
                                 {
-                                    "code":"Dashboard Username : svsNSr@yzCTic.com<br>Dashboard Password : jWgfmo"
+                                    "code":"Dashboard Username : shinobi@savemyemailbox.com<br>Dashboard Password : shinobi"
                                 }
                             ]
                         },
