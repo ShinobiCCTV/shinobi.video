@@ -7,7 +7,7 @@
                     "text":"The easiest way to install, directly on metal, is through git. The following operating systems are supported.",
                     "list":[
                         {
-                            "text":"Ubuntu 16.10.3, 17.10.1 and 18.04"
+                            "text":"Ubuntu 17.10.1"
                         },
                         {
                             "text":"CentOS 7"
@@ -23,7 +23,7 @@
                             "text":"Become <b>root</b> to use the installer and run Shinobi. Use one of the following to do so.",
                             "list":[
                                 {
-                                    "text":"<b>Ubuntu</b> 16.10.3, 17.10.1 and 18.04",
+                                    "text":"<b>Ubuntu</b> 17.10.1",
                                     "code":"sudo su"
                                 },
                                 {
@@ -143,7 +143,7 @@
             "description":"Ubuntu : The Easier Way",
             "blocks":[
                 {
-                    "text":"This installer works well with Ubuntu 16.10.3, 17.10.1 and 18.04"
+                    "text":"This installer works well with Ubuntu 17.10.1"
                 },
                 {
                     "orderList":[
@@ -197,7 +197,7 @@
             "description":"Ubuntu : The Harder Way",
             "blocks":[
                 {
-                    "text":"This installer works well with Ubuntu 16 and 18."
+                    "text":"This installer works well with Ubuntu 16 and 17."
                 },
                 {
                     "text":"<b>Dont have FFMPEG installed?</b>",
@@ -206,7 +206,7 @@
                             "text":"Open <code>Terminal</code>."
                         },
                         {
-                            "text":"Add the ffmpeg 3.x repo if you are not on Ubuntu 18 or above.",
+                            "text":"Add the ffmpeg 3.x repo if you are not on Ubuntu 17+.",
                             "code":"sudo add-apt-repository ppa:jonathonf/ffmpeg-3"
                         },
                         {

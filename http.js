@@ -71,6 +71,7 @@ s.sortArticles=function(){
     })
 }
 s.sortArticles()
+//s.database.articles = new nedb({ filename: __dirname+'/database/articles.json', autoload: true })
 s.database.contact = new nedb({ filename: __dirname+'/database/contact.json', autoload: true })
 s.database.rebate = new nedb({ filename: __dirname+'/database/rebates.json', autoload: true })
 s.database.returns = new nedb({ filename: __dirname+'/database/returns.json', autoload: true })
@@ -337,7 +338,7 @@ app.get(['/','/:file','/:file/:option'], function(req, res) {
     }else{
         req.file='index';
     }
-    req.data={config:config,pageData:req.pageData,file_get_contents:s.file_get_contents,__dirname:__dirname,option:req.params.option}
+    req.data={statsDb : s.database.articleStats,config:config,pageData:req.pageData,file_get_contents:s.file_get_contents,__dirname:__dirname,option:req.params.option}
     switch(req.params.file){
         case'articles':
             req.data.articlesPosts=s.getNumberOfArticles(0)

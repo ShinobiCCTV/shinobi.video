@@ -1,15 +1,15 @@
 [
     {
-        "description":"Install OpenCV and OpenALPR <b>without</b> CUDA <small>(Ubuntu - Easy)</small>",
+        "description":"Install OpenCV <b>without</b> CUDA <small>(Ubuntu - Easy)</small>",
         "blocks":[
             {
-                "text":"OpenCV is the base engine used for detection. You will find most object detection software uses OpenCV or something based on it."
+                "text":"OpenCV is the base engine used for detection. You will find most object detection software uses OpenCV or something based on it. This is the same install script used in the CUDA installation but if you do not have the NVIDIA Drivers and CUDA Toolkit it will install OpenCV without it."
             },
             {
                 "orderList":[
                     {
                         "text":"Install libraries",
-                        "code":"sudo apt update && sudo apt install git libopencv-dev python-opencv openalpr openalpr-daemon openalpr-utils libopenalpr-dev libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++"
+                        "code":"sudo bash <(curl -s https://raw.githubusercontent.com/ShinobiCCTV/Shinobi/dev/INSTALL/opencv-cuda.sh)"
                     }
                 ]
             }
@@ -45,11 +45,11 @@
                     },
                     {
                         "text":"Download, Build and Install OpenCV with CUDA enabled.",
-                        "code":"bash <(curl -s https://raw.githubusercontent.com/ShinobiCCTV/Shinobi/dev/INSTALL/opencv-cuda.sh)"
+                        "code":"sudo bash <(curl -s https://raw.githubusercontent.com/ShinobiCCTV/Shinobi/dev/INSTALL/opencv-cuda.sh)"
                     },
                     {
                         "text":"<b>Driver not starting?</b> You may need to reboot. If not then you may need to install version 340 instead.",
-                        "code":"apt remove nvidia* -y<br>apt install nvidia-340 -y"
+                        "code":"sudo apt install nvidia-340* -y"
                     }
                 ]
             }
@@ -77,16 +77,12 @@
             {
                 "orderList":[
                     {
-                        "text":"<b>OPTIONAL : </b> If you are already root user you must return to a regular user.",
-                        "code":"exit"
-                    },
-                    {
                         "text":"Navigate to your Shinobi directory, where you downloaded the Shinobi files to.",
                         "code":"<i>Example : </i>cd /home/Shinobi"
                     },
                     {
                         "text":"Navigate to your Shinobi directory and install the node.js wrappers needed to run the plugin.",
-                        "code":"sudo npm install opencv canvas@1.6 moment --unsafe-perm"
+                        "code":"sudo sh plugins/opencv/INSTALL.sh"
                     },
                     {
                         "text":"Setup the configuration file for the plugin.",
@@ -101,12 +97,8 @@
                         "code":"nano conf.json"
                     },
                     {
-                        "text":"Reutrn to root user.",
-                        "code":"sudo su"
-                    },
-                    {
                         "text":"Start the OpenCV plugin",
-                        "code":"pm2 start plugins/opencv/shinobi-opencv.js"
+                        "code":"sudo pm2 start plugins/opencv/shinobi-opencv.js"
                     },
                     {
                         "text":"When complete you will see <code>Detector : OpenCV Connected</code> in your Monitor Settings. Shinobi does not need to be restarted unless you modified the <code>PluginKeys</code> in <code>conf.json</code>"

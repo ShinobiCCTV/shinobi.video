@@ -1,0 +1,94 @@
+<% config.Title='Features'; %>
+<% include blocks/header.ejs %>
+<link href="libs/css/hipster_cards.css" rel="stylesheet"/> 
+<style>
+    .people-panel{}
+</style>
+<% include blocks/subheader.ejs %>
+<section id="learn" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="margin-top-0 text-primary" title="ZoneMinder vs Shinobi">Heroes of Shinobi</h2>
+                <p>"For the future I would gladly give my life." </p>
+                <hr class="primary">
+            </div>
+        </div>
+        <div class="masonry-container">
+              <% [
+                  {
+                      name : 'Moe Alam',
+                      img : 'libs/assets/backgrounds/3.jpg',
+                      discordHandle : 'moeiscool#0001',
+                      title : 'Creator of Shinobi',
+                      description : 'A true visionary... is what I would say if I wasn\'t filling in my own card.',
+                  },
+                  {
+                      name : 'Kevin Godell',
+                      img : 'libs/assets/backgrounds/4.jpg',
+                      discordHandle : 'kevinGodell#2855',
+                      title : 'Head of Research and Development',
+                      description : 'Kevin has provided keystones for Shinobi such as HLS, Poseidon, and the Built-In Motion Detector. Mention of these barely scratches the surface in what Kevin has given the Shinobi community and, even more so, the Open Source community.',
+                  },
+//                  {
+//                      name : 'Sean Alam',
+//                      discordHandle : 'netdude#8753',
+//                      title : "Moe's Brother",
+//                      description : 'Encouraged Moe to build a CCTV platform that led to where we are today.',
+//                  },
+              ].forEach(function(v,n){
+                if(!v.img){
+                    var randomNumber = (Math.floor(Math.random() * 5) + 1)
+                    v.img = 'libs/assets/backgrounds/'+randomNumber+'.jpg'
+                }
+                %>
+            <div class="card-box col-md-4 col-sm-6">
+                <div class="card" data-background="image" data-src="<%= v.img %>">
+                    <div class="header">
+                        <div class="category">
+                            <h6 class="label label-primary"><%= v.discordHandle %></h6>    
+                        </div>
+                    </div>
+                    
+                    <div class="content">
+                        <h4 class="cursive">
+                            <%= v.name %>
+                        </h4>
+                        <h6>
+                            <%= v.title %>
+                        </h6>
+                        <p class="description"><%= v.description %></p>
+                    </div>
+                    <div class="filter">
+                        
+                    </div>
+                </div> <!-- end card -->                    
+            </div>
+           <%  }) %>
+        </div>
+    </div>
+</section>
+<% include blocks/getstarted.ejs %>
+<% include blocks/footer.ejs %>
+<script src="libs/js/hipster-cards.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+<script>
+
+    $().ready(function(){
+
+        var $container = $('.masonry-container');
+
+        doc_width = $(document).width();
+
+        if (doc_width >= 768){
+            $container.masonry({
+                itemSelector        : '.card-box',
+                columnWidth         : '.card-box',
+                transitionDuration  : 0
+            });   
+        } else {
+            $('.mas-container').removeClass('mas-container').addClass('row');
+        }            
+    });
+</script>
