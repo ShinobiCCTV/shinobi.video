@@ -72,7 +72,7 @@
                         "code":"pm2 start plugins/motion/shinobi-motion.js"
                     },
                     {
-                        "text":"When complete you will see <code>Detector : Motion Connected</code> in your Monitor Settings. Shinobi does not need to be restarted unless you modified the <code>PluginKeys</code> in <code>conf.json</code>"
+                        "text":"When complete you will see <code>Detector : Motion Connected</code> in the Advanced view of your Monitor Settings. Shinobi does not need to be restarted unless you modified the <code>PluginKeys</code> in <code>conf.json</code>"
                     }
                 ]
             }
