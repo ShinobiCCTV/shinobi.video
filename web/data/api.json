@@ -26,6 +26,10 @@
         "description":"Get Streams",
         "blocks":[
             {
+                "text":"<b>Get a Monitor object</b> and it will have a set of stream links already pre-built in the <code>streams</code> variable.",
+                "code":"http://xxx.xxx.xxx.xxx/[API KEY]/monitor/[GROUP KEY]/[MONITOR ID]"
+            },
+            {
                 "text":"<b>JPEG Snapshot.</b> Snapshot must be enabled in Monitor Settings.",
                 "code":"http://xxx.xxx.xxx.xxx/[API KEY]/jpeg/[GROUP KEY]/[MONITOR ID]/s.jpg"
             },
@@ -40,6 +44,14 @@
             {
                 "text":"<b>m3u8 for HLS Stream.</b> Stream type must be HLS.",
                 "code":"http://xxx.xxx.xxx.xxx/[API KEY]/hls/[GROUP KEY]/[MONITOR ID]/s.m3u8"
+            },
+            {
+                "text":"<b>FLV Stream.</b> Stream type must be FLV.",
+                "code":"http://xxx.xxx.xxx.xxx/[API KEY]/flv/[GROUP KEY]/[MONITOR ID]/s.flv"
+            },
+            {
+                "text":"<b>Poseidon (MP4) Stream.</b> Stream type must be Poesidon.",
+                "code":"http://xxx.xxx.xxx.xxx/[API KEY]/mp4/[GROUP KEY]/[MONITOR ID]/s.mp4"
             }
         ]
     },
@@ -168,6 +180,30 @@
             {
                 "text":"Mark as Read",
                 "code":"http://xxx.xxx.xxx.xxx/[API KEY]/videos/[GROUP KEY]/[MONITOR ID]/[FILENAME]/status/2"
+            }
+        ]
+    },
+    {
+        "description":"Direct Camera Management via ONVIF",
+        "blocks":[
+            {
+                "text":"To get a full list of possible actions and options please refer to <a href=\"https://github.com/futomi/node-onvif\" target=\"_blank\">Futomi's ONVIF Documentiation</a>."
+            },
+            {
+                "text":"Use a basic command",
+                "code":"http://xxx.xxx.xxx.xxx/[API KEY]/onvif/[GROUP KEY]/[MONITOR ID]/[ACTION]"
+            },
+            {
+                "text":"Use a service based command",
+                "code":"http://xxx.xxx.xxx.xxx/[API KEY]/onvif/[GROUP KEY]/[MONITOR ID]/[SERVICE]/[ACTION]"
+            },
+            {
+                "text":"Example of <a href=\"https://github.com/futomi/node-onvif#OnvifDevice-ptzMove-method\" target=\"_blank\">ptzMove</a>. You can add options by adding the <code>options</code> query variable.",
+                "code":"http://xxx.xxx.xxx.xxx/XXXXXXXXXXXXXXXXX/onvif/2Df5hBE/bunny/ptzMove?options={\"speed\":{\"x\":1,\"y\":0,\"z\":0},\"timeout\":1}"
+            },
+            {
+                "text":"Example of <code>device.getCapabilities</code><a href=\"https://github.com/futomi/node-onvif#OnvifServiceDevice-getCapabilities-method\" target=\"_blank\">device.getCapabilities</a>",
+                "code":"http://xxx.xxx.xxx.xxx/XXXXXXXXXXXXXXXXX/onvif/2Df5hBE/bunny/device/getCapabilities"
             }
         ]
     },
