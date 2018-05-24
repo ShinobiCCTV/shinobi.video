@@ -202,7 +202,7 @@
                 "code":"http://xxx.xxx.xxx.xxx/XXXXXXXXXXXXXXXXX/onvif/2Df5hBE/bunny/ptzMove?options={\"speed\":{\"x\":1,\"y\":0,\"z\":0},\"timeout\":1}"
             },
             {
-                "text":"Example of <code>device.getCapabilities</code><a href=\"https://github.com/futomi/node-onvif#OnvifServiceDevice-getCapabilities-method\" target=\"_blank\">device.getCapabilities</a>",
+                "text":"Example of <a href=\"https://github.com/futomi/node-onvif#OnvifServiceDevice-getCapabilities-method\" target=\"_blank\">device.getCapabilities</a>",
                 "code":"http://xxx.xxx.xxx.xxx/XXXXXXXXXXXXXXXXX/onvif/2Df5hBE/bunny/device/getCapabilities"
             }
         ]
