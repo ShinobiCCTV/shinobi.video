@@ -1,0 +1,93 @@
+<% var Title='Hardware Warnings'; %>
+<% include blocks/header.ejs %>
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <% include blocks/branding.ejs %>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="fa fa-exclamation-triangle"></span> <%= Title %></h1>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <% include blocks/search.ejs %>
+                            <section class="doc-section">
+                                <h2 class="section-title">Brands</h2>
+                                <% pageData.Brands.forEach(function(brand,m){ %>
+                                <% switch(brand.status){
+                                   case'success':
+                                        if(!brand.isSafeDate){
+                                            brand.isSafeDate = 'Unsure';
+                                        }
+                                        brand.safetyStatus = 'Confirmed Safe on : '+brand.isSafeDate;
+                                    break;
+                                   case'warning':
+                                        brand.safetyStatus = 'Safety Unknown';
+                                    break;
+                                   default:
+                                        brand.status = 'danger';
+                                        brand.safetyStatus = 'Not Safe';
+                                    break;
+                                } %>
+                               <div class="section-block bs-callout bs-callout-<%- brand.status %>">
+                                   <h4 id="content-<%-link_id(brand.brand)%>"><a class="text-faded" href="#content-<%-link_id(brand.brand)%>"><i class="fa fa-paperclip"></i></a> <%=brand.brand%> <small class="text-uppercase"><%- brand.safetyStatus %></small></h4>
+                                   <% if(brand.info && brand.info !== ''){ %><p><%- brand.info %></p><% } %>
+                                   <% if(brand.models && brand.models.length > 0){ %><b>Affected Models</b> <i>(May be patched already)</i><p>
+                                       <%- brand.models.join(', ') %></p>
+                                   <% } %>
+                                   <% if(brand.links && brand.links !== ''){ %><i>References</i><br><ul>
+                                       <% brand.links.forEach(function(link){ %>
+                                           <li><a href="<%- link.href %>" target="_blank"><%- link.label %></a></li>
+                                       <% }) %></ul>
+                                   <% } %>
+                                   <% if(brand.alternateNames){ %><b>Possible Aliases : </b><p>
+                                         <% var tmp = ''
+                                         brand.alternateNames.forEach(function(name,place){
+                                             if(typeof name === 'string'){
+                                                 tmp += name
+                                             }else{
+                                                 tmp += '<a href="'+name.href+'" target="_blank">'+name.label+'</a>'
+                                             }
+                                             if(place !== brand.alternateNames.length - 1){
+                                                 tmp += ', '
+                                             }
+                                         }) %>
+                                         <%- tmp %>
+                                        </p>
+                                   <% } %>
+                                </div>
+                                  <%  }) %>
+                            </section>
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                            <% Object.keys(pageData).forEach(function(key){
+                                 v=pageData[key] %>
+                                <li><a class="scrollto" href="#<%-link_id(key)%>"><%-key%></a>
+                                    <ul class="nav doc-sub-menu">
+                                        <% pageData[key].forEach(function(v,n){ %>
+                                        <li><a class="scrollto" href="#content-<%- link_id(v.brand) %>"><%- v.brand %></a></li>
+                                        <%  }) %>
+                                    </ul>
+                                </li>
+                            <% }) %>
+                                <% include blocks/menu-options.ejs %>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+    </div><!--//page-wrapper-->
+<% include blocks/footer.ejs %>
+</body>
+</html> 
+

@@ -1,0 +1,649 @@
+{
+    "Brands":[
+       {
+          "brand": "Reolink",
+          "models": [],
+          "info": "Despite being of superior quality hardware and software for a consumer grade line of products there is an issue where the camera consistently sends data to an offsite location even with the prescribed camera changes from Reolink support.",
+          "links": [
+             {
+                "label": "Spy Alert! Reolink products have a security hole",
+                "href": "https://shinobi.video/articles/2018-05-06-spy-alert-reolink-products-have-a-security-hole"
+             }
+          ]
+       },
+       {
+          "brand": "Foscam",
+          "status": "warning",
+          "models": [],
+          "info": "Foscam has been known to leave backdoors and insecure admin logins available. Because of this remotely accesible cameras become another window to your home. Foscam has mentioned patches for this but the stability of the company seems to be in question among many groups. Foscam has since migrated their presence to a new name, <b>Amcrest</b>.",
+          "alternateNames": [
+              "Amcrest",
+              "Chacon",
+              "Thomson",
+              "7links",
+              "Opticam",
+              "Netis",
+              "Turbox",
+              "Novodio",
+              "Ambientcam",
+              "Nexxt",
+              "Technaxx",
+              "Qcam",
+              "Ivue",
+              "Ebode",
+              "Sab"
+          ],
+          "links": [
+             {
+                "label": "Foscam Security Cameras Full of Security Flaws",
+                "href": "https://www.tomsguide.com/us/foscam-camera-flaws,news-25254.html"
+             },
+             {
+                "label": "Is This Cam Inviting Hackers into Your Home?",
+                "href": "https://safeandsavvy.f-secure.com/2017/06/06/foscam-ip-cameras-insecure-iot/"
+             },
+             {
+                "label": "(1 Star Rating) I have several of these cameras and have been happy with the performance and reliability...",
+                "href": "https://www.amazon.com/gp/review/RFM7GAPVPH6RD"
+             }
+          ]
+       },
+       {
+          "brand": "Besder",
+          "models": [],
+          "info": "This brand has been found to be sending data back to a VoIP service provider. Not much else is known about this brand.",
+          "links": [
+             {
+                "label": "Spy Alert! Besder Branded Cameras caught phoning home!",
+                "href": "https://shinobi.video/articles/2018-05-26-spy-alert-besder-branded-cameras-caught-phoning-home"
+             }
+          ]
+       },
+       {
+          "brand": "Geovision",
+          "models": [],
+          "info": "Geovision IP Cameras allow multiple remote command executions without authorized access. Hackers are able to view existing passwords.",
+          "links": [
+             {
+                "label": "Geovision Unprecedented Security Vulnerabilities And Backdoor",
+                "href": "https://www.reddit.com/r/videosurveillance/comments/7xi0rv/geovision_unprecedented_security_vulnerabilities/"
+             },
+             {
+                "label": "Geovision IP Camera Multiple Remote Command Execution - Multiple Stack Overflow - Double free - Unauthorized Access.txt",
+                "href": "https://github.com/mcw0/PoC/blob/master/Geovision%20IP%20Camera%20Multiple%20Remote%20Command%20Execution%20-%20Multiple%20Stack%20Overflow%20-%20Double%20free%20-%20Unauthorized%20Access.txt"
+             }
+          ]
+       },
+       {
+          "brand": "Hikvision",
+          "status": "warning",
+          "models": [],
+          "info": "Due to a backdoor found in multiple Hikvision security cameras and DVRs users were locked out of their devices and had new “system” user accounts added without their permission. Hikvision has acknowledged the backdoor and has pushed a patch but for only some of its products.",
+          "alternateNames": [
+             {
+                  "label": "2M CCTV",
+                  "href": "https://www.2mcctv.com/"
+             },
+             {
+                  "label": "3xLogic",
+                  "href": "https://www.3xlogic.com/products/cameras"
+             },
+             {
+                  "label": "ABUS",
+                  "href": "https://www.abus.com/eng"
+             },
+             {
+                  "label": "ADJ",
+                  "href": "http://www.adj.it/"
+             },
+             {
+                  "label": "Advidia",
+                  "href": "http://advidia.com/cameras/"
+             },
+             {
+                  "label": "Alibi",
+                  "href": "https://www.supercircuits.com/brands/alibi/network-ip-security-cameras"
+             },
+             {
+                  "label": "Allnet",
+                  "href": "http://www.allnet.de/en/allnet-brand/"
+             },
+             {
+                  "label": "Ameta",
+                  "href": "https://www.ametagroup.com/"
+             },
+             {
+                  "label": "Anaveo",
+                  "href": "http://www.anaveo.com/"
+             },
+             {
+                  "label": "Annke",
+                  "href": "http://www.annke.com/"
+             },
+             {
+                  "label": "Arcdyn",
+                  "href": "https://www.arcdyn.com/"
+             },
+             {
+                  "label": "Armix",
+                  "href": "http://www.armixcctv.com/products.htm"
+             },
+             {
+                  "label": "AVS Uriel",
+                  "href": "http://avsipcctv.com/"
+             },
+             {
+                  "label": "Avue",
+                  "href": "http://avueinc.com/"
+             },
+             {
+                  "label": "Burnstech",
+                  "href": "http://www.theburnstech.com/our-products/cctv-equipment/ip-cameras-nvrs/cameras-h-series/"
+             },
+             {
+                  "label": "Cantek",
+                  "href": "https://www.123securityproducts.com/cantek.html/"
+             },
+             {
+                  "label": "CCTVStar",
+                  "href": "http://www.cctvstar.com/ver4/"
+             },
+             {
+                  "label": "Derytech",
+                  "href": "https://www.gsscctv.com/ip-solutions/ip-cameras/derytech"
+             },
+             {
+                  "label": "DMP",
+                  "href": "https://dmp.com/video"
+             },
+             {
+                  "label": "DSS",
+                  "href": "http://www.dss-cctv.com/"
+             },
+             {
+                  "label": "Dunlop",
+                  "href": "http://www.dunlopcctv.com/"
+             },
+             {
+                  "label": "DVR Unlimited",
+                  "href": "https://dvrunlimited.com/"
+             },
+             {
+                  "label": "Elisa Live",
+                  "href": "https://elisalive.com/"
+             },
+             {
+                  "label": "Epcom",
+                  "href": "https://www.epcom.net/"
+             },
+             {
+                  "label": "Ezviz",
+                  "href": "https://www.ezvizlife.com/"
+             },
+             {
+                  "label": "Global Network Security",
+                  "href": "http://store.gnsdvr.com/"
+             },
+             {
+                  "label": "Grundig",
+                  "href": "http://www.grundig-security.com/"
+             },
+             {
+                  "label": "GVS Security",
+                  "href": "http://www.gvscolombia.com/"
+             },
+             {
+                  "label": "HES Supply",
+                  "href": "http://hessupply.com/"
+             },
+             {
+                  "label": "Hills",
+                  "href": "https://www.hills.com.au/security/products/cctv-surveillance/by/brand/hills/"
+             },
+             {
+                  "label": "Hinovision",
+                  "href": "http://hinovision.com/"
+             },
+             {
+                  "label": "Hitosino",
+                  "href": "https://www.amazon.co.uk/Hitosino/b/ref=bl_dp_s_web_12178099031?ie=UTF8&node=12178099031&field-lbr_brands_browse-bin=Hitosino"
+             },
+             {
+                  "label": "Honeywell",
+                  "href": "http://honeywellvideo.com/products/video-systems/recording-devices/analog/performance-series/757666.html"
+             },
+             {
+                  "label": "Hunt CCTV",
+                  "href": "http://huntcctv.com/product-category/ip-products/"
+             },
+             {
+                  "label": "Infinite Pixels",
+                  "href": "http://ipxusa.com/"
+             },
+             {
+                  "label": "Inkovideo",
+                  "href": "https://inkovideo.de/"
+             },
+             {
+                  "label": "Innekt",
+                  "href": "%20http://www.innekt.com/"
+             },
+             {
+                  "label": "Interlogix",
+                  "href": "http://ipvm.com/interlogix"
+             },
+             {
+                  "label": "Invidtech",
+                  "href": "http://www.invidtech.com/products"
+             },
+             {
+                  "label": "JFL",
+                  "href": "http://www.jfl.com.br/esp/produtos-cctv-lancamento-destaque"
+             },
+             {
+                  "label": "Jlinks",
+                  "href": "https://store.jlinks.com/?page_id=3277"
+             },
+             {
+                  "label": "KT&C",
+                  "href": "http://www.ktncusa.com/ip"
+             },
+             {
+                  "label": "LaView",
+                  "href": "https://www.laviewsecurity.com/"
+             },
+             {
+                  "label": "LTS",
+                  "href": "https://ipvm.com/reports/lts-test"
+             },
+             {
+                  "label": "Matrix Security Solutions",
+                  "href": "http://www.matrixsecusol.com/index.html"
+             },
+             {
+                  "label": "MicroView",
+                  "href": "https://www.microview.nl/"
+             },
+             {
+                  "label": "Nelly's Security",
+                  "href": "http://www.nellyssecurity.com/"
+             },
+             {
+                  "label": "Negaco",
+                  "href": "http://negaco.com/"
+             },
+             {
+                  "label": "Raster",
+                  "href": "http://www.raster-uk.com/#"
+             },
+             {
+                  "label": "Norelco SafeCam / Spider Vue / Invezia",
+                  "href": "http://www.norelcosafecam.com/"
+             },
+             {
+                  "label": "Northern",
+                  "href": "https://ipvm.com/reports/ti-ed-northern-video-test"
+             },
+             {
+                  "label": "Novicam",
+                  "href": "http://www.novicam.ru/camcorder/ip?limit=9999"
+             },
+             {
+                  "label": "Oco",
+                  "href": "http://getoco.com/us/"
+             },
+             {
+                  "label": "Oculur",
+                  "href": "https://www.a1securitycameras.com/oculur/"
+             },
+             {
+                  "label": "Onix",
+                  "href": "https://www.onixusa.com/"
+             },
+             {
+                  "label": "People Fu",
+                  "href": "http://www.peoplefu.com/"
+             },
+             {
+                  "label": "Pnet",
+                  "href": "https://www.amazon.com/Pnet/b/ref=bl_dp_s_web_13997276011?ie=UTF8&node=13997276011&field-lbr_brands_browse-bin=Pnet"
+             },
+             {
+                  "label": "Power Technology",
+                  "href": "http://www.powertechna.com/"
+             },
+             {
+                  "label": "Raster",
+                  "href": "http://www.raster-uk.com/products.aspx?g=9&c=3"
+             },
+             {
+                  "label": "Safire",
+                  "href": "http://www.safirecctv.com/"
+             },
+             {
+                  "label": "Scati",
+                  "href": "http://www.scati.com/en/products/cameras_23.html"
+             },
+             {
+                  "label": "Security Camera Warehouse",
+                  "href": "https://www.security-camera-warehouse.com/intellipro-ip-cameras/"
+             },
+             {
+                  "label": "SecurityTronix",
+                  "href": "http://securitytronix.com/"
+             },
+             {
+                  "label": "Sentry CCTV",
+                  "href": "http://cctvsentry.com/#!/products/1-ip-cameras"
+             },
+             {
+                  "label": "Siqura / TKH",
+                  "href": "http://www.siqura.com/products/cameras"
+             },
+             {
+                  "label": "SnapAV / Wirepath",
+                  "href": "https://www.snapav.com/shop/en/snapav/search/ip-cameras"
+             },
+             {
+                  "label": "Swann",
+                  "href": "http://www.swann.com/"
+             },
+             {
+                  "label": "Syscom",
+                  "href": "https://www.syscom.mx/"
+             },
+             {
+                  "label": "Techpro",
+                  "href": "http://www.techprosecurity.com/"
+             },
+             {
+                  "label": "Trendnet",
+                  "href": "http://www.trendnet.com/products/business/surveillance/poe-cameras"
+             },
+             {
+                  "label": "Vantage Security",
+                  "href": "http://www.vantagesecurity.com/"
+             },
+             {
+                  "label": "W Box",
+                  "href": "https://ipvm.com/reports/adi-w-box-test"
+             },
+             {
+                  "label": "Winic",
+                  "href": "http://winictech.com/index.php?id_category=86&controller=category"
+             },
+             {
+                  "label": "Xyclop",
+                  "href": "http://www.aras.nl/nl/page/merkenoverzicht/xyclop-cctv"
+             },
+             {
+                  "label": "Zicom",
+                  "href": "http://zicom.com/products/cctv-system/"
+             }
+          ],
+          "links": [
+             {
+                "label": "Dahua, Hikvision IoT Devices Under Siege",
+                "href": "https://krebsonsecurity.com/2017/03/dahua-hikvision-iot-devices-under-siege/"
+             },
+             {
+                "label": "Hikvision Patches Backdoor in IP Cameras",
+                "href": "https://threatpost.com/hikvision-patches-backdoor-in-ip-cameras/125522/"
+             }
+          ]
+       },
+       {
+          "brand": "Dahua",
+          "models": [],
+          "info": "Dahua, one of the world’s largest makers of devices like security cameras and DVRs, has shipped a software update that closes a gaping security hole in a broad swath of its products. The vulnerability allows anyone to bypass the login process for these devices and gain remote, direct control over vulnerable systems.",
+          "links": [
+             {
+                "label": "More IP surveillance cameras found with backdoors built into the code",
+                "href": "https://www.scmagazineuk.com/more-ip-surveillance-cameras-found-with-backdoors-built-into-the-code/article/642745/"
+             },
+             {
+                "label": "Dahua, Hikvision IoT Devices Under Siege",
+                "href": "https://krebsonsecurity.com/2017/03/dahua-hikvision-iot-devices-under-siege/"
+             }
+          ],
+          "alternateNames": [
+                 {
+                      "label": "ADT",
+                      "href": "https://www.adt.com/"
+                 },
+                 {
+                      "label": "Advidia",
+                      "href": "http://advidia.com/"
+                 },
+                 {
+                      "label": "Amcrest",
+                      "href": "https://amcrest.com/"
+                 },
+                 {
+                      "label": "Ameta",
+                      "href": "https://www.ametagroup.com/"
+                 },
+                 {
+                      "label": "Annke",
+                      "href": "http://www.annke.com/"
+                 },
+                 {
+                      "label": "Aposonic",
+                      "href": "http://aposoniccctv.com/ip-cameras/"
+                 },
+                 {
+                      "label": "Bosch (DVRs)",
+                      "href": "https://us.boschsecurity.com/en/products/videosystems/recording/analogrecordingdvr/analogrecordingdvr_2702"
+                 },
+                 {
+                      "label": "Bticino",
+                      "href": "http://www.bticino.com/"
+                 },
+                 {
+                      "label": "Cantek",
+                      "href": "https://www.123securityproducts.com/cantek.html/"
+                 },
+                 {
+                      "label": "CCTV Security Pros",
+                      "href": "http://www.cctvsecuritypros.com/"
+                 },
+                 {
+                      "label": "CP Plus (Orange Line)",
+                      "href": "http://www.cpplusworld.com/"
+                 },
+                 {
+                      "label": "DH Vision",
+                      "href": "http://www.dh-vision.com/index.php/"
+                 },
+                 {
+                      "label": "Dotix",
+                      "href": "http://www.dotix.com/en/"
+                 },
+                 {
+                      "label": "DVR Unlimited",
+                      "href": "https://dvrunlimited.com/"
+                 },
+                 {
+                      "label": "eLine",
+                      "href": "https://elinetechnology.com/"
+                 },
+                 {
+                      "label": "FLIR",
+                      "href": "http://www.flir.com/security/content/?id=69412"
+                 },
+                 {
+                      "label": "Lorex",
+                      "href": "https://www.lorextechnology.com/"
+                 },
+                 {
+                      "label": "GSS",
+                      "href": "http://gogss.com/index.php?id_category=85&controller=category"
+                 },
+                 {
+                      "label": "Honeywell",
+                      "href": "http://honeywellvideo.com/products/video-systems/index.html"
+                 },
+                 {
+                      "label": "IC Realtime",
+                      "href": "http://icrealtime.com/"
+                 },
+                 {
+                      "label": "Impath Networks",
+                      "href": "http://www.impathnetworks.com/"
+                 },
+                 {
+                      "label": "Inaxsys",
+                      "href": "https://www.inaxsys.com/cameras-s27/"
+                 },
+                 {
+                      "label": "IndigoVision",
+                      "href": "https://www.indigovision.com/en-us/products/cameras-and-encoders/bx-cameras"
+                 },
+                 {
+                      "label": "Infinity CCTV",
+                      "href": "http://www.infinitycctv.co.id/"
+                 },
+                 {
+                      "label": "Innekt",
+                      "href": "http://www.innekt.com/"
+                 },
+                 {
+                      "label": "IntelBras",
+                      "href": "http://www.intelbras.com.br/"
+                 },
+                 {
+                      "label": "KBVision",
+                      "href": "http://kbvisiongroup.com/"
+                 },
+                 {
+                      "label": "Legrand",
+                      "href": "http://www.legrand.com/EN/"
+                 },
+                 {
+                      "label": "Lumixen",
+                      "href": "http://lumixen.com/"
+                 },
+                 {
+                      "label": "Maxron",
+                      "href": "http://www.maxron-cctv.ir/"
+                 },
+                 {
+                      "label": "Panasonic",
+                      "href": "http://security.panasonic.com/products/"
+                 },
+                 {
+                      "label": "People Fu",
+                      "href": "http://www.peoplefu.com/"
+                 },
+                 {
+                      "label": "Q-See",
+                      "href": "https://q-see.com/"
+                 },
+                 {
+                      "label": "Raster",
+                      "href": "http://www.raster-uk.com/products.aspx?g=9&c=3"
+                 },
+                 {
+                      "label": "Rhodium",
+                      "href": "http://rhodiumsys.com"
+                 },
+                 {
+                      "label": "Riva",
+                      "href": "http://www.rivatech.de/en/"
+                 },
+                 {
+                      "label": "RVI",
+                      "href": "http://rvi-cctv.ru/"
+                 },
+                 {
+                      "label": "Saxco",
+                      "href": "http://www.saxco.com.my/products.php+&cd=4&hl=en&ct=clnk&gl=us"
+                 },
+                 {
+                      "label": "SavvyTech",
+                      "href": "http://www.savvytechsecurity.com/"
+                 },
+                 {
+                      "label": "Security Camera King (Elite)",
+                      "href": "https://www.securitycameraking.com/all-elite-series-329-ctg.html"
+                 },
+                 {
+                      "label": "SecurityTronix",
+                      "href": "http://www.securitytronix.com/products/products3.php?cat2=12&cat3=4"
+                 },
+                 {
+                      "label": "Sentry360",
+                      "href": "https://sentry360.com/"
+                 },
+                 {
+                      "label": "Speco",
+                      "href": "https://ipvm.com/reports/speco-dahua"
+                 },
+                 {
+                      "label": "Techpro",
+                      "href": "http://www.techprosecurity.com/"
+                 },
+                 {
+                      "label": "ToughDog",
+                      "href": "http://tdsecuritysystems.com/"
+                 },
+                 {
+                      "label": "Tyco Holis",
+                      "href": "http://www.holisnvr.com/products.html"
+                 },
+                 {
+                      "label": "Tyco Illustra Essentials",
+                      "href": "https://illustracameras.com/products/cameras"
+                 },
+                 {
+                      "label": "Ura",
+                      "href": "http://www.ura.fr/"
+                 },
+                 {
+                      "label": "VIP Vision",
+                      "href": "http://www.vip-vision.com/"
+                 },
+                 {
+                      "label": "Watashi",
+                      "href": "http://www.watashi.com.kh/watashi/"
+                 },
+                 {
+                      "label": "Watchnet",
+                      "href": "http://watchnetinc.com/products/"
+                 },
+                 {
+                      "label": "Winic",
+                      "href": "http://winictech.com/index.php?id_category=85&controller=category"
+                 }
+            ]                                                                               
+       },
+       {
+          "brand": "Honeywell",
+          "models": [],
+          "info": "Honeywell has ordered camera hardwware from Dahua, who has been known to provide unsafe technology. They have acknowledged the issue and have pushed updates but we cannot be sure of other product safety."
+       },
+       {
+          "brand": "Sony",
+          "models": ["SNC-CH115", "SNC-CH120", "SNC-CH160", "SNC-CH220", "SNC-CH260", "SNC-DH120", "SNC-DH120T", "SNC-DH160", "SNC-DH220", "SNC-DH220T", "SNC-DH260", "SNC-EB520", "SNC-EM520", "SNC-EM521", "SNC-ZB550", "SNC-ZM550", "SNC-ZM551", "SNC-EP550", "SNC-EP580", "SNC-ER550", "SNC-ER550C", "SNC-ER580", "SNC-ER585", "SNC-ER585H", "SNC-ZP550", "SNC-ZR550", "SNC-EP520", "SNC-EP521", "SNC-ER520", "SNC-ER521", "SNC-ER521C", "SNC-CX600", "SNC-CX600W", "SNC-EB600", "SNC-EB600B", "SNC-EB602R", "SNC-EB630", "SNC-EB630B", "SNC-EB632R", "SNC-EM600", "SNC-EM601", "SNC-EM602R", "SNC-EM602RC", "SNC-EM630", "SNC-EM631", "SNC-EM632R", "SNC-EM632RC", "SNC-VB600", "SNC-VB600B", "SNC-VB600B5", "SNC-VB630", "SNC-VB6305", "SNC-VB6307", "SNC-VB632D", "SNC-VB635", "SNC-VM600", "SNC-VM600B", "SNC-VM600B5", "SNC-VM601", "SNC-VM601B", "SNC-VM602R", "SNC-VM630", "SNC-VM6305", "SNC-VM6307", "SNC-VM631", "SNC-VM632R", "SNC-WR600", "SNC-WR602", "SNC-WR602C", "SNC-WR630", "SNC-WR632", "SNC-WR632C", "SNC-XM631", "SNC-XM632", "SNC-XM636", "SNC-XM637", "SNC-VB600L", "SNC-VM600L", "SNC-XM631L", "SNC-WR602CL"],
+          "info": "SEC Consult has found a backdoor in Sony IPELA Engine IP Cameras, mainly used professionally by enterprises and authorities. This backdoor allows an attacker to run arbitrary code on the affected IP cameras.",
+          "links": [
+             {
+                "label": "Backdoors in Sony IP Cameras Make Them Mirai-Vulnerable",
+                "href": "https://www.bankinfosecurity.com/three-backdoors-found-in-sony-ip-cameras-a-9581"
+             },
+             {
+                "label": "Backdoor vulnerabilities discovered in Sony IP cameras",
+                "href": "https://www.zdnet.com/article/backdoors-discovered-in-sony-ip-cameras/"
+             },
+             {
+                "label": "Backdoor in Sony IPELA Engine IP Cameras",
+                "href": "https://www.sec-consult.com/en/blog/2016/12/backdoor-in-sony-ipela-engine-ip-cameras/"
+             },
+             {
+                "label": "80 Sony IP camera models come with backdoors",
+                "href": "https://www.helpnetsecurity.com/2016/12/07/sony-ip-camera-backdoors/"
+             }
+          ]
+       }
+    ]
+}
